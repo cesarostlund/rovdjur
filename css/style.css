@@ -1,1 +1,77 @@
-/* Denna fil skall innehålla din CSS kod */
+@media only screen and (max-width: 600px) {
+body {
+    background-image: url(/img/forest.jpg);
+}
+
+#container {    
+    
+    display: grid;
+    height: 812px;
+    width: 375px;
+    grid-template-areas:
+    'nav'
+    'hd'
+    'mn'
+    'ft'
+}
+
+nav {
+    grid-area: nav;
+    background-color: darkolivegreen;
+    width: 357px;
+    height: 70px;
+    
+}
+
+#varg {
+    height: 90px;
+    line-height: 90px;
+}
+header {
+    font-size: 40px;
+    grid-area: hd;
+    background-color: beige;
+    width: 357px;
+    height: 80px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+main {
+    white-space: normal;
+    grid-area: mn;
+    background-color: beige;
+    width: 357px;
+    height: 525;
+}
+
+footer {
+    grid-area: ft;
+    background-color: darkolivegreen;
+    width: 357px;
+    height: 50px;
+}
+
+#yeet
+{
+    width: 100%;
+}
+}
+
+#knappar
+{
+    font-size: 25px;
+    line-height: 90px;
+    text-align: center;
+    
+}
+
+:any-link
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Amatic SC',cursive;
+}
